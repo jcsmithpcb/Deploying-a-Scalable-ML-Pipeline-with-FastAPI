@@ -15,7 +15,7 @@ def test_one():
     X_train = np.array([[0, 1, 2], [1, 0, 3], [2, 1, 0]])
     y_train = np.array([0, 1, 0])
 
-    model = train_model(X_train, Y_train)
+    model = train_model(X_train, y_train)
     assert isinstance(model, RandomForestClassifier), "train_model did not return a RandomForestClassifier instance"
     pass
 
