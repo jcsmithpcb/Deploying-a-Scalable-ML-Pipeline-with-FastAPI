@@ -12,6 +12,9 @@ from ml.model import (
     save_model,
     train_model,
 )
+
+print(os.getcwd())
+
 # TODO: load the cencus.csv data
 project_path = "/home/jsmithlinux/Deploying-a-Scalable-ML-Pipeline-with-FastAPI"
 data_path = os.path.join(project_path, "data", "census.csv")
