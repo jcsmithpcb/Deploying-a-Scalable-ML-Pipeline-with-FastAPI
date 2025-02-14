@@ -46,4 +46,4 @@ This model is designed to predict whether an individual’s income is greater th
 - Future improvements could include:
   - Hyperparameter tuning to optimize model performance.
   - Addressing class imbalance if necessary.
-  - Evaluating fairness metrics for potential biases in predictions.
+  - Evaluating fairness metrics for potential biases in predictions
