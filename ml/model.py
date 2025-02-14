@@ -21,13 +21,13 @@ def train_model(X_train, y_train):
     model
         Trained machine learning model.
     """
-    model = RandomForestClassifier(
-        n_estimators=100,  # Number of trees in the forest
-        random_state=42,   # Seed for reproducibility
-        max_depth=None,    # No maximum depth for the trees
-        min_samples_split=2,  # Minimum samples required to split an internal node
-        min_samples_leaf=1    # Minimum samples required for a leaf node
-    )
+	model = RandomForestClassifier(
+		n_estimators=100,  # Number of trees in the forest
+		random_state=42,   # Seed for reproducibility
+		max_depth=None,    # No maximum depth for the trees
+		min_samples_split=2,  # Minimum samples required to split an internal node
+		min_samples_leaf=1    # Minimum samples required for a leaf node
+	)
 	model.fit(X_train, y_train)
 	return model
 
@@ -67,7 +67,7 @@ def inference(model, X):
     preds : np.array
         Predictions from the model.
     """
-	preds = model.predict(X)  
+	preds = model.predict(X)
     return preds
 
 def save_model(model, path):
@@ -134,7 +134,7 @@ def performance_on_categorical_slice(
         training=False,
         encoder=encoder,
         lb=lb,
-    )
+        )
     preds = inference(model, X_slice)
     precision, recall, fbeta = compute_model_metrics(y_slice, preds)
     return precision, recall, fbeta
