@@ -29,7 +29,7 @@ def train_model(X_train, y_train):
 	model.fit(X_train, y_train)
 	return model
 
-def comwpute_model_metrics(y, preds):
+def compute_model_metrics(y, preds):
 	"""
 	Validates the trained machine learning model using precision, recall, and F1.
 	 
